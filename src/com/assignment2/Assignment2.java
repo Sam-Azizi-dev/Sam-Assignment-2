@@ -13,7 +13,6 @@ public class Assignment2 {
 		// Generate Random Number
 		Random randomNum = new Random();
 		int randomNumber = randomNum.nextInt(100);
-		System.out.println(randomNumber);
 
 		for (int counter = 0; counter < 5; counter++) {
 			if (userGuessNumber == randomNumber) {
