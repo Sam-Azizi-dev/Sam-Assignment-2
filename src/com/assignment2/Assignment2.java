@@ -29,8 +29,9 @@ public class Assignment2 {
 		}
 		if (userGuessNumber != randomNumber) {
 			System.out.println("You lose!");
+			System.out.println("The number to guess was:" + randomNumber);
 		}
-		System.out.println("The number to guess was:" + randomNumber);
+
 		scanner.close();
 
 	}
@@ -45,20 +46,6 @@ public class Assignment2 {
 			userGuessNumber = Integer.parseInt(userGuessString);
 		}
 		return userGuessNumber;
-	}
-
-	// Compare guessed and Random Number
-	static boolean compareMethod(int userGuessNumber, int randomNumber) {
-		if (userGuessNumber == randomNumber) {
-			System.out.println("You win!");
-			return false;
-		} else if (userGuessNumber < randomNumber) {
-			System.out.println("Please pick a higher number");
-
-		} else if (userGuessNumber > randomNumber) {
-			System.out.println("Please pick a lower number");
-		}
-		return true;
 	}
 
 }
